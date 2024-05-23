@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Member Team Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="text-center my-4">
+        <h1>VeriTech Software Service</h1>
+    </header>
+    <section class="intro text-center mb-4">
+        <p>
+            Welcome to VeriTech Software Service, where a dedicated team of professionals works together to bring innovation, creativity, and expertise to the software industry. Get to know the individuals who make our company thrive.
+        </p>
+    </section>
+    <main class="container">
+        <section class="team-section mb-5">
+            <h2 class="section-title text-center">Leadership / Management Team</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="member card">
+                        <img src="2.man" class="card-img-top" alt="Founder Name" data-toggle="tooltip" data-placement="top" title="Founder & CEO">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Mahesh VishWnath Burukule</h3>
+                            <p class="card-text">Founder & CEO</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="member card">
+                        <img src="1.man" class="card-img-top" alt="Founder Name" data-toggle="tooltip" data-placement="top" title="Founder & CTO">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Sharad Anant Wadhokar</h3>
+                            <p class="card-text">Founder & CTO</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="member card">
+                        <img src="2.man" class="card-img-top" alt="VP Name" data-toggle="tooltip" data-placement="top" title="VP, Development & Growth">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Anant Bhaskarrao Wadhokar</h3>
+                            <p class="card-text">VP, Development & Growth</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="member card">
+                        <img src="2.female.jpg" class="card-img-top" alt="VP Name" data-toggle="tooltip" data-placement="top" title="VP, Sales & Operations">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Deepika Gowda</h3>
+                            <p class="card-text">VP, Sales & Operations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-section mb-5">
+            <h2 class="section-title text-center">Development Team</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="member card">
+                        <img src="3.female.jpg" class="card-img-top" alt="Developer Name" data-toggle="tooltip" data-placement="top" title="Team Lead, Software Engineer">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Smriti Jena</h3>
+                            <p class="card-text">Team Lead, Software Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="member card">
+                        <img src="3.man" class="card-img-top" alt="Developer Name" data-toggle="tooltip" data-placement="top" title="Software Engineer">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Nishant Sharma</h3>
+                            <p class="card-text">Software Engineer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-section mb-5">
+            <h2 class="section-title text-center">Sales and Marketing Team</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="member card">
+                        <img src="2.female.jpg" class="card-img-top" alt="Employee Name" data-toggle="tooltip" data-placement="top" title="Team Lead, Sales Officer">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Mani Malika</h3>
+                            <p class="card-text">Team Lead, Sales Officer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="member card">
+                        <img src="4.man" class="card-img-top" alt="Employee Name" data-toggle="tooltip" data-placement="top" title="Sales Officer">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Satendra Verma</h3>
+                            <p class="card-text">Sales Officer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        // Initialize Bootstrap tooltips
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Shadow effect on hover
+        document.querySelectorAll('.member').forEach(member => {
+            member.addEventListener('mouseenter', () => {
+                member.classList.add('shadow-lg');
+            });
+            member.addEventListener('mouseleave', () => {
+                member.classList.remove('shadow-lg');
+            });
+        });
+    </script>
+</body>
+</html>
